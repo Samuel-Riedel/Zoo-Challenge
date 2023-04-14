@@ -34,8 +34,6 @@ img {
 }
 
 h1,
-h2,
-h3,
 h4,
 h5 {
   /*Purple*/
@@ -43,6 +41,41 @@ h5 {
   margin-bottom: 1em;
 }
 
+
+/* Green Tiger */
+h2,
+{
+  color: #F4743B;
+}
+/* Green Tiger*/
+
+/*Girrafe Color */
+h3 {
+  color: #F4743B
+}
+
+.giraffestext {
+  font-size: 160%;
+}
+/* Giraffe color*/
+
+
+/* News */
+
+.news {
+  text-align: center;
+}
+
+/* News */
+
+
+/* button */
+
+.education-container button:hover {
+  background-color: #f0e100;
+}
+
+/* button */
 h1 {
   font-size: 250%;
 }
@@ -57,7 +90,7 @@ h3 {
 
 button {
   display: inline-block;
-  border-radius: 3px;
+  border-radius:30px;
   cursor: pointer;
   padding: 10px 20px;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
@@ -75,8 +108,7 @@ footer {
   justify-content: space-between;
 }
 
-.introduction {
-}
+
 
 #badge {
   height: 120px;
@@ -85,19 +117,35 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  
 }
 
-#badge:hover {
-  background-color: yellow;
+#badge::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: #f0e100;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+  opacity: 0.3;
 }
 
+#badge:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
 #badge p {
   text-align: center;
   font-size: 125%;
@@ -105,11 +153,11 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  border: 5px solid #749279;
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  vertical-align:top;
 }
 
 .tigers {
@@ -118,8 +166,8 @@ footer {
 }
 
 .giraffe {
-  background-color: #465775;
-  color: #56e39f;
+  background-color: #483C46;
+  color: #BEEE62;
 }
 
 .giraffe h2 {
@@ -166,11 +214,13 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 30px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+  font-size: 200%;
 }
 
 /*Membership*/
@@ -178,6 +228,7 @@ footer {
 .membership {
   text-align: center;
   background-color: #fffffc;
+  
 }
 
 .membership h2 {
@@ -188,8 +239,54 @@ footer {
   color: #ff7f11;
 }
 
+.membership p {
+ width: 700px
+ text-align: center;
+}
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: horizontal;
+}
+
+/*HomeWork Samuel*/
+
+#logo {
+  border: none;
+
+}
+
+.introduction {
+background-color: #f8f0fb;
+
+}
+
+p {
+  letter-spacing:  1.5px;
+}
+
+.dogs {
+background-color:  #0b3c49;
+color: #ef6f6c ;
+
+
+
+}
+
+.dogs h2 {
+  font-size: 40px;
+}
+.dogs h3, li{
+  color:#ff7f11;
+
+font-size: 25px;
+}
+
+.dogs p {
+  font-size: 15px;
+  color: #f0e100;
+}
+
+.dogs img {
+ 
 }
